@@ -1,11 +1,15 @@
+import { BrowserRouter, Routes } from 'react-router-dom'
 import './App.css'
+import AppRoutes from './AppRoutes'
 
-function App() {
+const App = () => {
 
 
   return (
     <>
-     
+     <BrowserRouter>
+     <AppRoutes />
+     </BrowserRouter>
     </>
   )
 }
