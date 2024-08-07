@@ -4,20 +4,31 @@ import "./navbar.scss";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
-
+  //const [menu, setMenu] = useState(false)
+  //navigation's bar under links
   const location = useLocation;
-
-  const handleClick = () => setClick(!click);
-
-  const closeMobileMenu = () => setClick(false);
-
   const isActive = (path) => location.pathname === path;
+
+  const handleClick = () => {
+    setClick((prevClick) => !prevClick);
+    console.log("chamou");
+    console.log("click estado", click);
+  };
+
+  const closeMobileMenu = () => {
+    setClick(false);
+    console.log("chamou close");
+  };
+
+  useEffect(() => {
+    console.log("Estado de click atualizado:", click);
+  }, [click]);
 
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+        <div className="nav-container">
+          <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
             <img src="/favicon.png" />
             SweetDreams
           </Link>

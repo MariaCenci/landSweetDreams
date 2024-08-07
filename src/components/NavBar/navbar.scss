@@ -1,6 +1,6 @@
 @import "../../sass/variables.scss";
 
-.navbar-container {
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -13,8 +13,8 @@
     color: map-get($colors, primary);
   }
 
-  .navbar-logo {
-    font-family: "Edu AU VIC WA NT Hand";
+  .nav-logo {
+    font-family: map-get($font-family, logo);
     font-size: map-get($font-size, md);
     img {
       width: 22px;
@@ -30,7 +30,7 @@
     gap: 130px;
     align-items: center;
     justify-content: center;
-    font-family: "Quicksand";
+    font-family: map-get($font-family, nav-links);
     font-size: map-get($font-size, sm);
 
     .nav-item {
@@ -47,7 +47,7 @@
           position: absolute;
           width: 100%;
           height: 1.3px;
-          background-color: map-get($colors, links-nav-bar);
+          background-color: map-get($colors, links-nav-bars);
           bottom: -5px;
           border-radius: 3px;
           left: 0;
@@ -59,6 +59,52 @@
           transform: scaleX(1);
         }
       }
+    }
+  }
+}
+
+//MOBILE MENU
+@media screen and (max-width: 960px) {
+  .nav-container {
+    justify-content: space-between;
+    padding: 0 90px 0 60px;
+
+    .menu-icon {
+      display: block;
+      font-size: 20px;
+      color: map-get($colors, links-nav-bars);
+      z-index: 20;
+    }
+
+    .nav-logo {
+      z-index: 20;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 100px;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: fixed; 
+      top: 0; 
+      left: -100%; 
+      background-color: map-get($colors, bg-mobile-menu); 
+      transition: left 0.4s ease, opacity 0.4s ease; 
+
+      &.active {
+        left: 0;
+        opacity: 1;
+        z-index: 10;
+
+        a.active {
+          color: map-get($colors, hover-links-nav);
+        
+        &::after {
+          display: none;
+        }
+      }
+    }
     }
   }
 }
