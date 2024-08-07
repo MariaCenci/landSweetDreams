@@ -10,19 +10,12 @@ const NavBar = () => {
   const isActive = (path) => location.pathname === path;
 
   const handleClick = () => {
-    setClick((prevClick) => !prevClick);
-    console.log("chamou");
-    console.log("click estado", click);
+    setClick(!click);
   };
 
   const closeMobileMenu = () => {
     setClick(false);
-    console.log("chamou close");
   };
-
-  useEffect(() => {
-    console.log("Estado de click atualizado:", click);
-  }, [click]);
 
   return (
     <>
