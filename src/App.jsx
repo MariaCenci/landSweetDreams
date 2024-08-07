@@ -1,17 +1,16 @@
-import { BrowserRouter, Routes } from 'react-router-dom'
-import './App.css'
-import AppRoutes from './AppRoutes'
+import { BrowserRouter, Routes } from "react-router-dom";
+import "./App.scss";
+import AppRoutes from "./AppRoutes";
+
 
 const App = () => {
-
-
   return (
     <>
-     <BrowserRouter>
-     <AppRoutes />
-     </BrowserRouter>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
