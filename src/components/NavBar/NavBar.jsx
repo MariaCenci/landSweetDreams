@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./navbar.scss";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
-  //const [menu, setMenu] = useState(false)
-  //navigation's bar under links
-  const location = useLocation;
-  const isActive = (path) => location.pathname === path;
 
   const handleClick = () => {
     setClick(!click);
@@ -21,7 +18,7 @@ const NavBar = () => {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
+          <Link to="home" className="nav-logo" onClick={closeMobileMenu}>
             <img src="/favicon.png" />
             SweetDreams
           </Link>
@@ -30,44 +27,43 @@ const NavBar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink
-                to="/"
-                className={isActive("/") ? "nav-link active" : "nav-link"}
+              <Link
+                to="home"
+                className="nav-link"
                 onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/products"
-                className={
-                  isActive("/products") ? "nav-link active" : "nav-link"
-                }
+              <Link
+                to="products"
+                className="nav-link"
+                spy={true}
+                smooth={true}
+                duration={500}
                 onClick={closeMobileMenu}
               >
                 Products
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/about"
-                className={isActive("/about") ? "nav-link active" : "nav-link"}
+              <Link
+                to="about"
+                className="nav-link"
+                spy={true}
                 onClick={closeMobileMenu}
               >
                 About
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/contact"
-                className={
-                  isActive("/contact") ? "nav-link active" : "nav-link"
-                }
-                onClick={closeMobileMenu}
-              >
+              <Link to="contact" className="nav-link" onClick={closeMobileMenu}>
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
