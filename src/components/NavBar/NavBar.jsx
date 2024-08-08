@@ -19,8 +19,7 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="nav-container">
           <Link to="home" className="nav-logo" onClick={closeMobileMenu}>
-            <img src="/favicon.png" />
-            SweetDreams
+            <img src="./logoSD.svg" alt="SweetDreams" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fa-solid fa-x" : "fa-solid fa-bars"} />
