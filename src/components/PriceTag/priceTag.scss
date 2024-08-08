@@ -1,0 +1,23 @@
+@import "../../sass/variables.scss";
+
+.price-tag-container {
+  //display: flex;
+  
+  
+  //border-radius: 100px;
+
+  span {
+    display: flex;
+    width: 46px;
+    border-radius: 100px;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: map-get($font-size, sm);
+    position: absolute;
+    right: 0;
+    background-color: map-get($colors, bg-nav);
+    transform: translate(10%, -12%);
+  }
+}

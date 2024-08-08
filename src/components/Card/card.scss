@@ -1,0 +1,29 @@
+@import "../../sass/variables.scss";
+.card-item-title {
+  font-size: map-get($font-size, lg);
+  font-family: map-get($font-family, hero);
+}
+
+.card-item {
+  width: 300px;
+  height: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.337);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  .card-item-img {
+    width: 100%;
+  }
+
+  .card-item-title{
+font-size: map-get($font-size, lg);
+margin-bottom: 10px;
+  }
+
+  .card-item-text {
+    font-size: map-get($font-size, md);
+    margin-bottom: 30px;
+    
+  }
+}
