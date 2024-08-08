@@ -9,13 +9,13 @@
   background-color: map-get($colors, bg-nav);
   position: fixed;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.347);
   a,
   li {
     color: map-get($colors, primary);
   }
 
   .nav-logo {
-    font-family: map-get($font-family, logo);
     font-size: map-get($font-size, md);
     img {
       width: 154px;

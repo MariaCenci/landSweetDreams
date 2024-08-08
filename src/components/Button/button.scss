@@ -1,0 +1,16 @@
+@import "../../sass/variables.scss";
+
+button {
+  width: 224px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: map-get($colors, btn);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.649);
+  font-size: map-get($font-size, md);
+  font-family: map-get($font-family, body);
+  font-weight: 500;
+  color: map-get($colors, secondary);
+  cursor: pointer;
+}
+
