@@ -10,6 +10,7 @@
   position: fixed;
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.347);
+  z-index: 30;
   a,
   li {
     color: map-get($colors, primary);
@@ -17,6 +18,7 @@
 
   .nav-logo {
     font-size: map-get($font-size, md);
+    cursor: pointer;
     img {
       width: 154px;
     }
@@ -37,6 +39,7 @@
 
     .nav-item {
       position: relative;
+      cursor: pointer;
 
       a {
         transition: color 0.2s ease-in;

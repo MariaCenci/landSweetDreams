@@ -1,7 +1,7 @@
 @import "../../sass/variables.scss";
 
 .hero-container {
-  height: 68vh;
+  height: 90vh;
 
   img {
     width: 100%;
@@ -36,6 +36,7 @@
       position: relative;
       z-index: 1;
       transition: transform 0.5s ease-in-out;
+      background-color: map-get($colors, btn);
 
       &:hover {
         transform: scale(1.1);

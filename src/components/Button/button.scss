@@ -5,12 +5,13 @@ button {
   padding: 16px;
   border: none;
   border-radius: 28px;
-  background-color: map-get($colors, btn);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.395);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.689);
   font-size: map-get($font-size, md);
   font-family: map-get($font-family, body);
   font-weight: 500;
   color: map-get($colors, secondary);
   cursor: pointer;
+
+
 }
 

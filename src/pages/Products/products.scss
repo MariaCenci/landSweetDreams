@@ -1,0 +1,24 @@
+@import "../../sass/variables.scss";
+
+#products-section {
+  background-color: map-get($colors, bg1-section);
+  padding: 90px 100px 90px 100px;
+
+  .title-section {
+    font-size: map-get($font-size, xxl);
+    //color: map-get($colors, primary);
+    color: rgba(0, 0, 0, 0.737);
+    font-family: map-get($font-family, nav-links);
+    font-weight: 300;
+  }
+
+  .cards-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding-top: 30px;
+
+   
+  }
+}
