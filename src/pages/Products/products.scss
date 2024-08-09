@@ -4,6 +4,10 @@
   background-color: map-get($colors, bg1-section);
   padding: 90px 100px 90px 100px;
 
+  .bakery-item-section{
+    margin-bottom: 108px;
+  }
+
   .title-section {
     font-size: map-get($font-size, xxl);
     //color: map-get($colors, primary);
@@ -14,7 +18,7 @@
 
   .cards-container {
     display: grid;
-    gap: 50px;
+    gap: 54px;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     padding-top: 30px;

@@ -1,7 +1,7 @@
 @import "../../sass/variables.scss";
 
 .hero-container {
-  height: 90vh;
+  height: 94vh;
 
   img {
     width: 100%;
@@ -20,9 +20,9 @@
     h1 {
       font-family: map-get($font-family, hero);
       color: rgba(255, 255, 255, 0.931);
-      font-size: map-get($font-size, xl);
+      font-size: map-get($font-size, xxl);
       margin-bottom: 4px;
-      margin-top: -500px;
+      margin-top: -590px;
     }
 
     .container-hero-p {
