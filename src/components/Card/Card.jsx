@@ -20,7 +20,7 @@ const Card = ({ title, src, text, tag, price }) => {
           <p className="card-item-text">{text}</p>
           <div className="btn-container">
             <Price price={price} />
-            <Button className="card-item" label="Buy" icon="./cart.svg" iconName="cart"/>
+            <Button className="card-item" label="Buy now" icon="./cart.svg" iconName="cart"/>
           </div>
         </div>
       </div>

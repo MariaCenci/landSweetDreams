@@ -71,7 +71,7 @@ const Products = () => {
             <Card
               title="Strawberry Tart"
               src="./images/tart.webp"
-              text="Savor the elegance of our Strawberry Tart, featuring a buttery, flaky crust topped with fresh, juicy strawberries and a smooth, creamy filling. "
+              text="Enjoy our Tart, flaky crust topped with fresh, juicy strawberries and a smooth, creamy filling. "
               tag="new"
               price="16"
             />
