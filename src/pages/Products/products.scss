@@ -9,11 +9,11 @@
   }
 
   .title-section {
-    font-size: map-get($font-size, xxl);
+    font-size: map-get($font-size, xl);
     //color: map-get($colors, primary);
-    color: rgba(0, 0, 0, 0.737);
-    font-family: map-get($font-family, nav-links);
-    font-weight: 300;
+    color: rgba(0, 0, 0, 0.841);
+    font-family: map-get($font-family, h1);
+    font-weight: 400;
   }
 
   .cards-container {

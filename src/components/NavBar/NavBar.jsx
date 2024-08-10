@@ -32,7 +32,7 @@ const NavBar = () => {
                 onClick={closeMobileMenu}
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={900}
               >
                 Home
               </Link>
@@ -43,7 +43,7 @@ const NavBar = () => {
                 className="nav-link"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={900}
                 onClick={closeMobileMenu}
               >
                 Products
@@ -54,13 +54,21 @@ const NavBar = () => {
                 to="about"
                 className="nav-link"
                 spy={true}
+                smooth={true}
+                duration={900}
                 onClick={closeMobileMenu}
               >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="contact" className="nav-link" onClick={closeMobileMenu}>
+              <Link
+                to="contact"
+                className="nav-link"
+                onClick={closeMobileMenu}
+                smooth={true}
+                duration={900}
+              >
                 Contact
               </Link>
             </li>

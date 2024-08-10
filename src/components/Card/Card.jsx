@@ -1,18 +1,27 @@
 import React from "react";
 import "./card.scss";
 import Button from "../Button/Button.jsx";
-import PriceTag from "../PriceTag/PriceTag.jsx";
+import Tag from "../Tag/Tag.jsx";
+import Price from "../Price/Price.jsx";
 
-const Card = ({ title, src, text, price }) => {
+const Card = ({ title, src, text, tag, price }) => {
   return (
     <>
       <div className="card-item">
-        <PriceTag price={price} />
-        <img className="card-item-img" src={src} alt="Bakery item" />
+        <Tag tag={tag} />
+        <img
+          className="card-item-img"
+          src={src}
+          alt="Bakery item"
+          loading="lazy"
+        />
         <div className="card-info-container">
           <h2 className="card-item-title">{title}</h2>
           <p className="card-item-text">{text}</p>
-          <Button className="card-item" label="Buy now" />
+          <div className="btn-container">
+            <Price price={price} />
+            <Button className="card-item" label="Buy" icon="./cart.svg" iconName="cart"/>
+          </div>
         </div>
       </div>
     </>
