@@ -22,7 +22,7 @@
       color: rgba(255, 255, 255, 0.931);
       font-size: map-get($font-size, xxl);
       margin-bottom: 4px;
-      margin-top: -590px;
+      margin-top: -600px;
     }
 
     .container-hero-p {
@@ -40,7 +40,7 @@
 
       &:hover {
         transform: scale(1.1);
-        background-color: map-get($colors, btn-hover);
+        background-color: map-get($colors, btn1-hover);
         animation-play-state: paused;
       }
 
@@ -64,7 +64,7 @@
       }
       50% {
        
-        background-color: map-get($colors, btn-hover);
+        background-color: map-get($colors, btn1-hover);
       }
       100% {
      

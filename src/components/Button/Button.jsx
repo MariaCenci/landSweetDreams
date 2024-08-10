@@ -1,15 +1,39 @@
 import React from "react";
 import "./button.scss";
+import { Link } from "react-scroll";
 
-const Button = ({ label, onclick, className, icon, iconName }) => {
-  return (
-    <>
-      <button className={`btn-${className}`} onClick={onclick}>
-        {label}
-     {icon && <img className={`icon-${iconName}`} src={icon} />}
-      </button>
-    </>
+const Button = ({
+  label,
+  onclick,
+  className,
+  icon,
+  iconName,
+  link,
+  linkProps
+}) => {
+  const renderButton = (
+    <button className={`btn-${className}`} onClick={onclick}>
+      {label}
+      {icon && <img className={`icon-${iconName}`} src={icon} />}
+    </button>
   );
+
+  if (link) {
+    return (
+      <Link
+        to={link.to}
+        className="btn-link"
+        spy={link.spy || true}
+        smooth={link.smooth || true}
+        duration={link.duration || 900}
+        {...linkProps}
+      >
+        {renderButton}
+      </Link>
+    );
+  }
+
+  return renderButton;
 };
 
 export default Button;

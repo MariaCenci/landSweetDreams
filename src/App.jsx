@@ -8,7 +8,7 @@ import "./App.scss";
 import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
-  // Lazy load the page components
+  // Lazy load components
   const Home = React.lazy(() => import("./pages/Home/Home"));
   const Products = React.lazy(() => import("./pages/Products/Products"));
   const About = React.lazy(() => import("./pages/About/About"));
