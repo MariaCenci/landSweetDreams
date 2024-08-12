@@ -4,7 +4,7 @@ import HeroSection from '../../components/HeroSection/HeroSection'
 const Home = () => {
   return (
     <>
-    <section id="home">
+    <section id="home-section">
         <HeroSection /> 
     </section>
   

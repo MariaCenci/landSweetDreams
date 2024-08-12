@@ -2,19 +2,13 @@
 
 #products-section {
   background-color: map-get($colors, bg1-section);
-  padding: 90px 100px 90px 100px;
+  
 
   .bakery-item-section{
     margin-bottom: 108px;
   }
 
-  .title-section {
-    font-size: map-get($font-size, xl);
-    //color: map-get($colors, primary);
-    color: rgba(0, 0, 0, 0.841);
-    font-family: map-get($font-family, h1);
-    font-weight: 400;
-  }
+  
 
   .cards-container {
     display: grid;

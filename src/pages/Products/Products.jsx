@@ -17,6 +17,7 @@ const Products = () => {
               price="28"
             />
 
+{/*
             <Card
               title="Citrus cake"
               src="./images/citrus.webp"
@@ -32,7 +33,13 @@ const Products = () => {
               tag="lacfree"
               price="30"
             />
-
+  <Card
+              title="Brownies"
+              src="./images/brownies.webp"
+              text="Fudgy, dense, and irresistibly chocolatey, our brownies are a treat you can't miss."
+              tag="best price"
+              price="18"
+            />*/}
             <Card
               title="Chocolate cake"
               src="./images/chocolatecake.webp"
@@ -40,13 +47,7 @@ const Products = () => {
               tag="best seller"
               price="20"
             />
-            <Card
-              title="Brownies"
-              src="./images/brownies.webp"
-              text="Fudgy, dense, and irresistibly chocolatey, our brownies are a treat you can't miss."
-              tag="best price"
-              price="18"
-            />
+          
             <Card
               title="Red berries cake"
               src="./images/redcake.webp"
@@ -88,21 +89,21 @@ const Products = () => {
         <section className="bakery-item-section">
           <h1 className="title-section">Cookies</h1>
           <div className="cards-container">
-            <Card
+          
+          <Card
               title="6 Classic Cookies"
               src="./images/classiccookies.webp"
               text="Perfect for any occasion, our Classic Cookies are crispy on the outside, soft on the inside, and full of flavor."
               tag="best seller"
               price="16"
-            />
-
-            <Card
+            /> 
+             <Card
               title="5 Nut Cookies"
               src="./images/cookiesnuts.webp"
               text="Delight in the perfect balance of chewy oats and crunchy nuts.  "
               tag="vegan"
               price="14"
-            />
+            />  
 
             <Card
               title="4 Chocolate Cookies"
@@ -110,7 +111,8 @@ const Products = () => {
               text="These cookies are a chocolate lover's dream, offering a melt-in-your-mouth experience with every bite."
               tag="new"
               price="12"
-            />
+            /> 
+           
           </div>
         </section>
       </section>

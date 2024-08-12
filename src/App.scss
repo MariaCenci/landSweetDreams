@@ -11,11 +11,22 @@ body {
   font-size: map-get($font-size, lg);
 }
 
+#products-section, #about-section{
+  padding: 98px 100px 90px 100px;
+}
 
 a, ul {
   list-style-type: none;
   text-decoration: none;
-  //color: map-get($colors, primary );
+  
+}
+
+.title-section {
+  font-size: map-get($font-size, xl);
+  color: rgba(0, 0, 0, 0.841);
+  font-family: map-get($font-family, h1);
+  font-weight: 400;
+  padding-bottom: 38px;
 }
 
 

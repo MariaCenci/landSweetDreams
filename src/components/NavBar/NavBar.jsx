@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-//import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.scss";
 
 const NavBar = () => {
-  const [click, setClick] = useState(false);
+  const [clickMobileMenu, setClickMobileMenu] = useState(false);
 
-  const handleClick = () => {
-    setClick(!click);
+  const handleClickMobileMenu = () => {
+    setClickMobileMenu(!clickMobileMenu);
   };
 
+
   const closeMobileMenu = () => {
-    setClick(false);
+    setClickMobileMenu(false);
   };
 
   return (
@@ -21,10 +21,12 @@ const NavBar = () => {
           <Link to="home" className="nav-logo" onClick={closeMobileMenu}>
             <img src="./logoSD.svg" alt="SweetDreams" />
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fa-solid fa-x" : "fa-solid fa-bars"} />
+          <div className="menu-icon" onClick={handleClickMobileMenu}>
+            <i
+              className={clickMobileMenu ? "fa-solid fa-x" : "fa-solid fa-bars"}
+            />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu">
             <li className="nav-item">
               <Link
                 to="home"
@@ -32,7 +34,8 @@ const NavBar = () => {
                 onClick={closeMobileMenu}
                 spy={true}
                 smooth={true}
-                duration={900}
+                duration={500}
+                activeClass="active"
               >
                 Home
               </Link>
@@ -43,7 +46,7 @@ const NavBar = () => {
                 className="nav-link"
                 spy={true}
                 smooth={true}
-                duration={900}
+                duration={500}
                 onClick={closeMobileMenu}
               >
                 Products
@@ -55,7 +58,7 @@ const NavBar = () => {
                 className="nav-link"
                 spy={true}
                 smooth={true}
-                duration={900}
+                duration={500}
                 onClick={closeMobileMenu}
               >
                 About
