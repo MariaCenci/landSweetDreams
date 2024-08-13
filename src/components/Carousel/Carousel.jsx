@@ -11,12 +11,12 @@ const Carousel = () => {
     {
         name: "John Doe",
         feedback: "A fantastic experience!",
-        image: "./images/p2.webp",
+        image: "./images/p3.webp",
       },
     {
       name: "Meredith Gray",
       feedback: "Always fresh and beautifully decorated.",
-      image: "./images/p3.webp",
+      image: "./images/p2.webp",
     },
     {
       name: "Michael Johnson",

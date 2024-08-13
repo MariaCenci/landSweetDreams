@@ -2,15 +2,14 @@
 
 #footer {
   background-color: map-get($colors, bg1-section);
-  padding: 38px 0 28px 0;
+  padding: 28px 0 18px 0;
 
   .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
-    gap: 58px;
+    gap: 38px;
 
     .social-container {
       display: flex;
@@ -31,15 +30,15 @@
           width: 48px;
           height: 48px;
           border-radius: 50px;
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.371);
-          transition: transform .3s ease-in-out;
-cursor: pointer;
-&:hover{
-    transform: scale(1.1);
-}
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.23);
+          transition: transform 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+          }
 
           .social-img {
-            
             width: 28px;
           }
         }
@@ -47,7 +46,7 @@ cursor: pointer;
     }
 
     .footer-text {
-        font-size: map-get($font-size, sm );
+      font-size: map-get($font-size, sm);
       color: rgba(0, 0, 0, 0.628);
     }
   }
