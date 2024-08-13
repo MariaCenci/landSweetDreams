@@ -19,7 +19,7 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="nav-container">
           <Link to="home" className="nav-logo" onClick={closeMobileMenu}>
-            <img src="./logoSD.svg" alt="SweetDreams" />
+            <img src="./icons/logoSD.svg" alt="SweetDreams" />
           </Link>
           <div className="menu-icon" onClick={handleClickMobileMenu}>
             <i

@@ -28,6 +28,7 @@ const App = () => {
 
         <Element name="about">
           <About />
+          
         </Element>
         <Element name="contact">
           <Contact />

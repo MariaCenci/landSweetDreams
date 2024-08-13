@@ -1,7 +1,6 @@
 @import "../../sass/variables.scss";
 
 #about-section {
-  height: 100vh;
   .about-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -20,34 +19,30 @@
       width: 100%;
       margin-top: 58px;
 
-
-.icon-about-wrapper{
-  display: flex;
-  gap: 8px;
-  align-items: center;
-
-.icon-about {
+      .icon-about-wrapper {
         display: flex;
-        justify-content: center;
+        gap: 8px;
         align-items: center;
-        
-        width: 70px;
-        height: 70px;
-        background-color: map-get($colors, btn);
-        border-radius: 100px;
-        box-shadow: 0 0 3px rgb(0, 0, 0);
 
-        img {
-          width: 28px;
+        .icon-about {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          width: 70px;
+          height: 70px;
+          background-color: map-get($colors, btn);
+          border-radius: 100px;
+          box-shadow: 0 0 3px rgb(0, 0, 0);
+
+          img {
+            width: 28px;
+          }
         }
       }
 
-}
-
-      
       .icon-about-text {
         p {
-  
           font-size: map-get($font-size, md);
         }
       }
@@ -64,4 +59,5 @@
       }
     }
   }
+  
 }

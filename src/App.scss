@@ -8,17 +8,19 @@
 
 body {
   font-family: map-get($font-family, body);
-  font-size: map-get($font-size, lg);
+  font-size: map-get($font-size, md);
 }
 
-#products-section, #about-section{
-  padding: 98px 100px 90px 100px;
-}
-
-a, ul {
+a,
+ul {
   list-style-type: none;
   text-decoration: none;
-  
+}
+
+#products-section,
+#about-section,
+#carousel-section {
+  padding: 118px 100px 168px 100px;
 }
 
 .title-section {
@@ -26,12 +28,11 @@ a, ul {
   color: rgba(0, 0, 0, 0.841);
   font-family: map-get($font-family, h1);
   font-weight: 400;
-  padding-bottom: 38px;
+  padding-bottom: 28px;
 }
 
-
-@media screen and (max-width: 960){
-  body{
+@media screen and (max-width: 960) {
+  body {
     font-size: map-get($font-size, md);
   }
 }

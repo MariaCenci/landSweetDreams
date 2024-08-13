@@ -1,11 +1,11 @@
 import React from "react";
 import "./about.scss";
+import Carousel from "../../components/Carousel/Carousel";
 
 const About = () => {
   return (
     <>
       <section id="about-section">
-        <h1 className="title-section">About us</h1>
         <div className="about-container">
           <div className="img-about-container">
             <img
@@ -14,7 +14,9 @@ const About = () => {
               alt="kitchen utensils"
             />
           </div>
+
           <div className="text-about-container">
+            <h1 className="title-section">About us</h1>
             <p className="text-about">
               Our passion for sweets began in our home kitchen, where every
               recipe was an expression of love and dedication. Over time, this
@@ -45,7 +47,7 @@ const About = () => {
                   </p>
                 </span>
               </div>
-             
+
               <div className="icon-about-wrapper">
                 <span className="icon-about">
                   <img src="./icons/iconYears.svg" alt="" />
@@ -60,7 +62,10 @@ const About = () => {
             </div>
           </div>
         </div>
+       
+     
       </section>
+      <Carousel />
     </>
   );
 };
