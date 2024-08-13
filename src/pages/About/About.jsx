@@ -5,7 +5,7 @@ import Carousel from "../../components/Carousel/Carousel";
 const About = () => {
   return (
     <>
-      <section id="about-section">
+      <section id="about">
         <div className="about-container">
           <div className="img-about-container">
             <img
@@ -65,7 +65,7 @@ const About = () => {
        
      
       </section>
-      <Carousel />
+     
     </>
   );
 };

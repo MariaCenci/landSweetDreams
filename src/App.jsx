@@ -6,6 +6,8 @@ import "./App.scss";
 //import About from "./pages/About/About";
 //import Contact from "./pages/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import Carousel from "./components/Carousel/Carousel";
 
 const App = () => {
   // Lazy load components
@@ -28,12 +30,14 @@ const App = () => {
 
         <Element name="about">
           <About />
-          
+          <Carousel />
         </Element>
+        
         <Element name="contact">
           <Contact />
         </Element>
       </Suspense>
+      <Footer />
     </>
   );
 };

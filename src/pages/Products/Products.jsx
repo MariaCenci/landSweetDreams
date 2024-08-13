@@ -5,7 +5,7 @@ import "./products.scss";
 const Products = () => {
   return (
     <>
-      <section id="products-section">
+      <section id="products">
         <section className="bakery-item-section">
           <h1 className="title-section">Cakes</h1>
           <div className="cards-container">

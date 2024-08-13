@@ -68,9 +68,10 @@ const NavBar = () => {
               <Link
                 to="contact"
                 className="nav-link"
-                onClick={closeMobileMenu}
+                spy={true}
                 smooth={true}
-                duration={900}
+                duration={500}
+                onClick={closeMobileMenu}
               >
                 Contact
               </Link>
