@@ -1,0 +1,104 @@
+@import "../../sass/variables.scss";
+
+#contact {
+
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.191);
+    border-radius: 10px;
+    min-width: 800px;
+    max-width: 1200px;
+    min-height: 678px;
+    max-height: 728px;
+    padding: 60px;
+
+    .contact-wrapper {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+
+      .contact-infos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: 28px;
+
+        .info-contact {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+
+          .img-info-contact {
+            width: 24px;
+          }
+
+          .info-contact {
+            font-size: map-get($font-size, sm);
+            font-family: map-get($font-family, nav-links);
+            font-weight: 300;
+          }
+        }
+      }
+
+      .field-form {
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 448px;
+          margin-bottom: 28px;
+          border: none;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.364);
+          border-radius: 10px;
+          padding: 10px;
+
+          ::placeholder {
+            padding: 4px 0 0 4px;
+          }
+        }
+      }
+
+      .field-form {
+        .textarea-form {
+          textarea {
+            width: 448px;
+            border: none;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.364);
+            border-radius: 10px;
+            font-family: map-get($font-family, body);
+            padding: 8px 0 0 8px;
+          }
+          textarea::placeholder {
+            padding: 4px 0 0 6px;
+          }
+        }
+      }
+
+      .btn-form {
+        button {
+          margin-top: 18px;
+          border-radius: 12px;
+          width: 204px;
+          padding: 12px;
+          background-color: map-get($colors, btn2);
+          transition: background-color 0.6s ease-in-out;
+          &:hover {
+            background-color: map-get($colors, btn2-hover);
+          }
+        }
+      }
+    }
+
+    iframe {
+      width: 458px;
+      height: 400px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.325);
+      border-radius: 10px;
+    }
+  }
+}
