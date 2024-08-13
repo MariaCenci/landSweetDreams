@@ -1,126 +1,126 @@
 @import "../../sass/variables.scss";
 
-
-
-#carousel-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: map-get($colors, bg1-section);
-
-   
-
-.carousel-section-wrapper{
+#carousel-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow: hidden;
-  
-  
+  background-color: map-get($colors, bg1-section);
 
- .title-carousel-wrapper{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
- }
-
-  .carousel-container {
-
+  .carousel-section-wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 400px;
-    margin-top: 20px;
-    position: relative;
     overflow: hidden;
-    overflow-x: scroll;
-    
 
-    .carousel-wrapper {
+    .title-carousel-wrapper {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
       height: 400px;
-      align-items: center;
-      transition: transform 0.5s ease-in-out;
-      gap: 18px;
-    
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+      overflow-x: scroll;
 
-      .carousel-card {
-        min-width: 242px;
-        max-width: 252px;
-        height: 350px;
-        margin: 18px 4px;
-        position: relative;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.266);
-        transition: opacity 0.5s ease;
-        border-radius: 10px;
+      .carousel-wrapper {
         display: flex;
+        width: 100%;
+        height: 400px;
         align-items: center;
-        flex-direction: column;
-        gap: 5px;
-        padding: 20px;
-        
-        background-color: map-get($colors, secondary );
+        transition: transform 0.5s ease-in-out;
+        gap: 18px;
 
-        #customer-img {
-          margin: 38px 0 10px 0;
-          object-fit: cover;
-          width: 80px;
-          height: 80px;
-          border-radius: 50px;
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.76);
-        }
+        .carousel-card {
+          min-width: 242px;
+          max-width: 252px;
+          height: 350px;
+          margin: 18px 4px;
+          position: relative;
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.266);
+          transition: opacity 0.5s ease;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 5px;
+          padding: 20px;
 
-        .star-icon-wrapper {
+          background-color: map-get($colors, secondary);
+
+          #customer-img {
+            margin: 38px 0 10px 0;
+            object-fit: cover;
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.76);
+          }
+
+          .star-icon-wrapper {
             margin-top: 12px;
-          #star-icon {
-            width: 28px;
+            #star-icon {
+              width: 28px;
+            }
+          }
+
+          h3 {
+            font-family: map-get($font-family, nav-links);
+            font-weight: 700;
+            font-size: map-get($font-size, md);
+          }
+
+          p {
+            font-size: map-get($font-size, md);
+            font-family: map-get($font-family, body);
+            font-weight: 300;
+            text-align: center;
+            height: 48px;
           }
         }
+      }
+    }
+    .carousel-btn {
+      width: 100px;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(50%);
+      padding: 0;
+      transition: opacity 1s ease-in;
+    }
 
-        h3 {
-          font-family: map-get($font-family, nav-links);
-          font-weight: 700;
-          font-size: map-get($font-size, md);
+    #prev-btn {
+      img {
+        width: 40px;
+
+        &:hover {
+          transform: scale(1.2);
         }
+      }
+    }
 
-        p {
-          font-size: map-get($font-size, md);
-          font-family: map-get($font-family, body);
-          font-weight: 300;
-          text-align: center;
-          height: 48px;
+    #next-btn {
+      img {
+        width: 40px;
+
+        &:hover {
+          transform: scale(1.2);
         }
       }
     }
   }
-  .carousel-btn {
-    width: 100px;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(50%);
-    padding: 0;
-  }
-
-  #prev-btn {
-    img {
-      width: 40px;
-    }
-  }
-
-  #next-btn {
-    img {
-      width: 40px;
-    }
-  }
-}
 }
