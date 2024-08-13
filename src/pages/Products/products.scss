@@ -2,21 +2,15 @@
 
 #products-section {
   background-color: map-get($colors, bg1-section);
-  
 
-  .bakery-item-section{
-    margin-bottom: 108px;
+  .bakery-item-section {
+    margin-bottom: 80px;
   }
-
-  
 
   .cards-container {
     display: grid;
     gap: 54px;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    padding-top: 30px;
-
-   
   }
 }
