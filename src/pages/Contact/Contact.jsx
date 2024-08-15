@@ -1,24 +1,37 @@
 import React from "react";
 import "./contact.scss";
+import Button from "../../components/Button/Button";
 
 const Contact = () => {
   return (
     <>
       <section id="contact">
         <div className="contact-container">
-          <div className="contact-wrapper">
+          <div className="contact-text-wrapper">
             <h1 className="title-section">Contact us</h1>
             <div className="contact-infos">
               <div className="info-contact">
-                <img className="img-info-contact" src="./icons/phone.svg" alt="" />
+                <img
+                  className="img-info-contact"
+                  src="./icons/phone.svg"
+                  alt=""
+                />
                 <span className="info-contact">+1 (555) 123-4567</span>
               </div>
               <div className="info-contact">
-                <img className="img-info-contact" src="./icons/address.svg" alt="" />
+                <img
+                  className="img-info-contact"
+                  src="./icons/address.svg"
+                  alt=""
+                />
                 <span className="info-contact">Toronto St</span>
               </div>
               <div className="info-contact">
-                <img className="img-info-contact" src="./icons/email.svg" alt="" />
+                <img
+                  className="img-info-contact"
+                  src="./icons/email.svg"
+                  alt=""
+                />
                 <span className="info-contact">sweetdreams@gmail.com</span>
               </div>
             </div>
@@ -54,7 +67,12 @@ const Contact = () => {
                 </div>
               </div>
               <div className="btn-form">
-                <button type="submit">Send</button>
+                <Button
+                  className="form"
+                  label="Send"
+                  icon="./icons/iconSend.svg"
+                  iconName="send"
+                />
               </div>
             </form>
           </div>
@@ -62,8 +80,6 @@ const Contact = () => {
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9054936424805!2d-79.37873182462155!3d43.650134552630334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb32476d17c3%3A0xc0286b92ad186853!2sToronto%20St%2C%20Toronto%2C%20ON%2C%20Canad%C3%A1!5e0!3m2!1sen-US!2sus!4v1723547573327!5m2!1sen-US!2sus"
-              width="600"
-              height="450"
               style={{ border: 0 }}
               allowfullscreen=""
               loading="lazy"
