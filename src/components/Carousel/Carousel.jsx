@@ -90,7 +90,7 @@ const Carousel = () => {
                 <p>{customer.feedback}</p>
                 <div className="star-icon-wrapper">
                   {[...Array(5)].map((i) => (
-                    <img key={i} id="star-icon" src="./icons/star.svg" alt="" />
+                    <img key={i} id="star-icon" src="./icons/iconStar.svg" alt="" />
                   ))}
                 </div>
               </div>

@@ -6,7 +6,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: map-get($colors, bg1-section);
+  background-color: map-get($colors, bg2-section);
+
+  .title-carousel {
+    .title-section {
+      text-align: center;
+    }
+  }
 
   .carousel-section-wrapper {
     display: flex;
@@ -14,13 +20,6 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
-
-    .title-carousel-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
 
     .carousel-container {
       display: flex;
@@ -55,8 +54,7 @@
           flex-direction: column;
           gap: 5px;
           padding: 20px;
-
-          background-color: map-get($colors, secondary);
+          background-color: map-get($colors, bg3-section);
 
           #customer-img {
             margin: 38px 0 10px 0;
@@ -69,6 +67,7 @@
 
           .star-icon-wrapper {
             margin-top: 12px;
+
             #star-icon {
               width: 28px;
             }
@@ -101,6 +100,7 @@
       transform: translateY(50%);
       padding: 0;
       transition: opacity 1s ease-in;
+      cursor: pointer;
     }
 
     #prev-btn {
@@ -120,6 +120,27 @@
         &:hover {
           transform: scale(1.2);
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .title-carousel {
+    .title-section {
+      font-size: map-get($font-size, xl);
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #carousel-section {
+    padding: 138px 8px 168px 8px;
+
+    .title-carousel {
+      .title-section {
+        padding: 0 10px;
       }
     }
   }
