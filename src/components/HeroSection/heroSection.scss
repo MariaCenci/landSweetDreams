@@ -1,7 +1,7 @@
 @import "../../sass/variables.scss";
 
 .hero-container {
-  height: 94vh;
+  height: 96vh;
 
   img {
     width: 100%;
@@ -19,17 +19,20 @@
 
     h1 {
       font-family: map-get($font-family, h1);
+      border-radius: 10px;
       color: rgba(255, 255, 255, 0.931);
-      font-size: map-get($font-size, xxl);
+      font-size: map-get($font-size, hero);
       margin-bottom: 4px;
-      margin-top: -600px;
+      margin-top: -750px;
+      text-align: center;
     }
 
     .container-hero-p {
       p {
-        font-size: map-get($font-size, lg );
+        font-size: map-get($font-size, lg);
         color: map-get($colors, secondary);
         margin-bottom: 24px;
+        text-align: center;
       }
     }
 
@@ -39,13 +42,15 @@
       border-radius: 10px;
       transition: transform 0.5s ease-in-out;
       background-color: map-get($colors, btn);
+     
 
       &:hover {
         transform: scale(1.1);
+
         background-color: map-get($colors, btn1-hover);
         animation-play-state: paused;
       }
-
+      
       &:before {
         content: "";
         position: absolute;
@@ -59,19 +64,97 @@
         animation: pulse 3.5s infinite;
       }
     }
+      
     @keyframes pulse {
       0% {
-        
+       
         background-color: map-get($colors, btn);
       }
       50% {
-       
         background-color: map-get($colors, btn1-hover);
       }
       100% {
-     
+        
         background-color: map-get($colors, btn);
       }
+    
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-container {
+    .container-hero-main {
+      h1 {
+        margin-top: -750px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-container {
+    .container-hero-main {
+      h1 {
+        font-size: map-get($font-size, xxl);
+        margin-top: -700px;
+      }
+
+      .container-hero-p {
+        p {
+          font-size: map-get($font-size, md);
+          color: map-get($colors, secondary);
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+  .hero-container {
+    .container-hero-main {
+      h1 {
+        font-size: map-get($font-size, hero-mobile);
+        margin-top: -750px;
+      }
+
+      .container-hero-p {
+        p {
+          font-size: map-get($font-size, sm);
+          color: map-get($colors, secondary);
+          margin-bottom: 24px;
+        }
+      }
+    }
+    .btn-hero {
+      width: 180px;
+      font-size: map-get($font-size, sm);
+    }
+  }
+}
+
+@media (max-width: 486px) {
+  .hero-container {
+    .container-hero-main {
+      h1 {
+        font-size: map-get($font-size, hero-xs-mobile);
+        margin-top: -780px;
+      }
+
+      .container-hero-p {
+        p {
+          font-size: map-get($font-size, sm);
+          color: map-get($colors, secondary);
+          padding: 0 48px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .btn-hero {
+      width: 190px;
+      padding: 18px;
+      font-size: map-get($font-size, sm);
     }
   }
 }
