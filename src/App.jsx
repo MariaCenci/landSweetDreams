@@ -24,15 +24,17 @@ const App = () => {
           <Home />
         </Element>
 
-        <Element name="products">
-          <Products />
-        </Element>
-
         <Element name="about">
           <About />
           <Carousel />
         </Element>
         
+
+        <Element name="products">
+          <Products />
+        </Element>
+
+       
         <Element name="contact">
           <Contact />
         </Element>

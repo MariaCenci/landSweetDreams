@@ -18,17 +18,19 @@ ul {
 }
 
 #products,
-#about,
-#carousel-section, #contact{
-  padding: 138px 100px 168px 100px;
+#about, #carousel-section, #contact{
+  padding: 138px 90px 168px 90px;
 }
+
+
 
 .title-section {
   font-size: map-get($font-size, xl);
   color: rgba(0, 0, 0, 0.841);
   font-family: map-get($font-family, h1);
   font-weight: 400;
-  padding-bottom: 28px;
+  padding-bottom: 22px;
+  
 }
 
 @media screen and (max-width: 960) {
@@ -36,3 +38,25 @@ ul {
     font-size: map-get($font-size, md);
   }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  #products,
+  #about,
+  #carousel-section, #contact{
+    padding: 138px 52px 168px 52px;
+  }
+  
+
+}
+
+@media  (max-width: 767px) {
+
+  #products,
+  #about,
+  #carousel-section, #contact{
+    padding: 138px 52px 168px 52px;
+  }
+  
+}
+
