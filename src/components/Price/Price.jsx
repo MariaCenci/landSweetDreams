@@ -4,7 +4,7 @@ import "./price.scss"
 const Price = ({price}) => {
   return (
     <>
-     <span>${price}.00</span> 
+     <span className='price-card'>${price}.00</span> 
     </>
   )
 }
