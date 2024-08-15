@@ -1,6 +1,6 @@
 @import "../../sass/variables.scss";
 
-#products{
+#products {
   background-color: map-get($colors, bg1-section);
 
   .bakery-item-section {
@@ -8,9 +8,75 @@
   }
 
   .cards-container {
-    display: grid;
-    gap: 54px;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    //flex-wrap: wrap;
+    gap: 58px;
+    //grid-template-columns: repeat(auto-fill, minmax(442px, 1fr));
     width: 100%;
   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #products {
+    .bakery-item-section {
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 38px;
+      }
+    }
+  }
+}
+
+@media (min-width: 670px) and (max-width: 767px) {
+  #products {
+    .bakery-item-section {
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 560px) and (max-width: 669px) {
+  #products {
+    .bakery-item-section {
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 559px) {
+  #products {
+    .bakery-item-section {
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 58px;
+      }
+    }
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  #products {
+    .bakery-item-section {
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 58px;
+      }
+    }
+  }
+
 }
