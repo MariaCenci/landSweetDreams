@@ -26,7 +26,7 @@ const NavBar = () => {
               className={clickMobileMenu ? "fa-solid fa-x" : "fa-solid fa-bars"}
             />
           </div>
-          <ul className="nav-menu">
+          <ul className={clickMobileMenu ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
                 to="home"
@@ -38,6 +38,19 @@ const NavBar = () => {
                 activeClass="active"
               >
                 Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                to="about"
+                className="nav-link"
+                spy={true}
+                smooth={true}
+                duration={500}
+                onClick={closeMobileMenu}
+              >
+                About
               </Link>
             </li>
             <li className="nav-item">
@@ -52,18 +65,7 @@ const NavBar = () => {
                 Products
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                to="about"
-                className="nav-link"
-                spy={true}
-                smooth={true}
-                duration={500}
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-            </li>
+           
             <li className="nav-item">
               <Link
                 to="contact"

@@ -18,7 +18,7 @@
 
   .nav-logo {
     font-size: map-get($font-size, md);
-    padding-left: 100px;
+    padding-left: 98px;
     cursor: pointer;
     img {
       width: 154px;
@@ -35,7 +35,7 @@
     gap: 42px;
     align-items: center;
     justify-content: center;
-    padding-right: 138px;
+    padding-right: 118px;
     font-family: map-get($font-family, nav-links);
     font-size: map-get($font-size, sm);
     z-index: 30;
@@ -91,6 +91,7 @@
     }
 
     .nav-logo {
+      padding-left: 18px;
       z-index: 30;
     }
 
@@ -105,6 +106,8 @@
       left: -100%;
       transition: left 0.4s ease;
       z-index: 20;
+      padding: 0;
+      font-size: map-get($font-size, lg);
 
       &.active {
         left: 0;
@@ -119,6 +122,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-container {
+    .nav-logo {
+      padding-left: 0;
     }
   }
 }
