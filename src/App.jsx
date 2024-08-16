@@ -1,40 +1,36 @@
 import { Element } from "react-scroll";
-import React, { Suspense } from "react";
+import React from "react";
 import "./App.scss";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/Carousel/Carousel";
+import Home from "./pages/Home/Home";
+import Products from "./pages/Products/Products";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
-  // Lazy load components
-  const Home = React.lazy(() => import("./pages/Home/Home"));
-  const Products = React.lazy(() => import("./pages/Products/Products"));
-  const About = React.lazy(() => import("./pages/About/About"));
-  const Contact = React.lazy(() => import("./pages/Contact/Contact"));
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
-        <NavBar />
+      <NavBar />
 
-        <Element name="home">
-          <Home />
-        </Element>
+      <Element name="home">
+        <Home />
+      </Element>
 
-        <Element name="about">
-          <About />
-          <Carousel />
-        </Element>
-        
+      <Element name="about">
+        <About />
+        <Carousel />
+      </Element>
 
-        <Element name="products">
-          <Products />
-        </Element>
+      <Element name="products">
+        <Products />
+      </Element>
 
-       
-        <Element name="contact">
-          <Contact />
-        </Element>
-      </Suspense>
+      <Element name="contact">
+        <Contact />
+      </Element>
+
       <Footer />
     </>
   );
