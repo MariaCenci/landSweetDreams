@@ -47,7 +47,48 @@
 
     .footer-text {
       font-size: map-get($font-size, sm);
-      color: rgba(0, 0, 0, 0.628);
+    
     }
   }
+}
+
+
+@media (min-width: 2560px) {
+
+  #footer {
+   
+    padding: 88px 0 68px 0;
+  
+    .footer-container {
+
+      gap: 98px;
+  
+      .social-container {
+   
+        .social {
+    
+    gap: 38px;
+  
+          .social-item {
+ 
+            width: 88px;
+            height: 88px;
+            border-radius: 50px;
+           
+          
+  
+            .social-img {
+              width: 48px;
+            }
+          }
+        }
+      }
+  
+      .footer-text {
+        font-size: map-get($font-size, lg);
+       
+      }
+    }
+
+}
 }

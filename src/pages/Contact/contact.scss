@@ -189,3 +189,73 @@
     }
   }
 }
+
+@media (min-width: 2560px) {
+  #contact {
+    .contact-container {
+      padding: 58px;
+      //height: 860px;
+      width: 100%;
+
+      .contact-text-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .title-section {
+          font-size: map-get($font-size, hero);
+        }
+
+        .contact-infos {
+          gap: 28px;
+          margin: 28px 0 58px 0;
+
+          .info-contact {
+            .img-info-contact {
+              width: 42px;
+            }
+
+            .info-contact {
+              font-size: map-get($font-size, xl);
+            }
+          }
+        }
+
+        .field-form {
+          input {
+            width: 100%;
+            padding: 24px 18px;
+
+            &::placeholder {
+              font-size: map-get($font-size, lg);
+            }
+          }
+        }
+
+        .field-form {
+          .textarea-form {
+            width: 100%;
+            textarea {
+              padding: 8px 0 0 8px;
+              height: 300px;
+            }
+            textarea::placeholder {
+              font-size: map-get($font-size, lg);
+            }
+          }
+        }
+
+        .btn-form {
+          width: 100%;
+          button {
+            width: 100%;
+            padding: 18px;
+            font-size: map-get($font-size, hero-mobile);
+          }
+          img {
+            width: 32px;
+          }
+        }
+      }
+    }
+  }
+}

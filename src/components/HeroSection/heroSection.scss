@@ -85,7 +85,7 @@
   .hero-container {
     .container-hero-main {
       h1 {
-        margin-top: -750px;
+        margin-top: -620px;
       }
     }
   }
@@ -96,7 +96,7 @@
     .container-hero-main {
       h1 {
         font-size: map-get($font-size, xxl);
-        margin-top: -700px;
+        margin-top: -650px;
       }
 
       .container-hero-p {
@@ -115,7 +115,7 @@
     .container-hero-main {
       h1 {
         font-size: map-get($font-size, hero-mobile);
-        margin-top: -750px;
+        margin-top: -650px;
       }
 
       .container-hero-p {
@@ -137,23 +137,63 @@
   .hero-container {
     .container-hero-main {
       h1 {
-        font-size: map-get($font-size, hero-xs-mobile);
-        margin-top: -780px;
+        font-size: map-get($font-size, lg);
+        margin-top: -620px;
       }
 
       .container-hero-p {
         p {
-          font-size: map-get($font-size, sm);
+          font-size: map-get($font-size, xs);
           color: map-get($colors, secondary);
-          padding: 0 48px;
+          padding: 0 28px;
           margin-bottom: 32px;
         }
       }
     }
     .btn-hero {
-      width: 190px;
-      padding: 18px;
-      font-size: map-get($font-size, sm);
+      width: 160px;
+      padding: 12px;
+      font-size: map-get($font-size, xs);
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .hero-container {
+    .container-hero-main {
+      h1 {
+        font-size: map-get($font-size, md);
+        margin-top: -640px;
+      }
+
+      .container-hero-p {
+        p {
+          font-size: map-get($font-size, xs);
+        }
+      }
+    }
+    
+  }
+}
+
+@media (min-width: 2560px) {
+  .hero-container {
+    .container-hero-main {
+      h1 {
+        font-size: map-get($font-size, hero-xtra);
+        margin-top: -1500px;
+      }
+
+      .container-hero-p {
+        p {
+          font-size: map-get($font-size, xxl);
+        }
+      }
+    }
+    .btn-hero {
+      width: 500px;
+      padding: 28px;
+      font-size: map-get($font-size, xl);
     }
   }
 }

@@ -90,6 +90,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   #icons-about {
+
     .icons-about-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -225,6 +226,63 @@
       .icon-about-text {
         padding: 0 32px 0 32px;
         font-size: map-get($font-size, sm);
+      }
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  #icons-about {
+    
+    .icons-about-container {
+      gap: 18px;
+
+      .icon-about-wrapper {
+        .icon-about {
+          img {
+            width: 88px;
+            height: 88px;
+          }
+        }
+      }
+
+      .icon-about-title {
+        font-size: map-get($font-size, xl);
+      }
+      .icon-about-text {
+        padding: 0 92px 0 92px;
+        font-size: map-get($font-size, lg);
+      }
+    }
+  }
+
+  #about {
+    .about-container {
+      gap: 58px;
+
+      .about-wrapper {
+        display: flex;
+        gap: 90px;
+        padding: 4px 18px 4px 4px;
+
+        .img-about-container {
+          width: 48%;
+
+          .img-about-section {
+            width: 100%;
+            height: 820px;
+          }
+        }
+
+        .text-about-container {
+          width: 58%;
+          font-size: map-get($font-size, xl);
+          padding-right: 48px;
+           .title-section {
+            font-size: map-get($font-size, hero);
+          }
+
+        }
       }
     }
   }

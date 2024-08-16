@@ -35,7 +35,7 @@
     gap: 42px;
     align-items: center;
     justify-content: center;
-    padding-right: 118px;
+    padding-right: 98px;
     font-family: map-get($font-family, nav-links);
     font-size: map-get($font-size, sm);
     z-index: 30;
@@ -128,8 +128,37 @@
 
 @media screen and (max-width: 480px) {
   .nav-container {
+    padding: 0 32px 0 8px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .nav-container {
+    height: 178px;
+
     .nav-logo {
-      padding-left: 0;
+      padding-left: 158px;
+
+      img {
+        width: 318px;
+        height: 86.6px;
+      }
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 68px;
+      padding-right: 198px;
+      font-size: map-get($font-size, hero-mobile);
+
+      .nav-item {
+        position: relative;
+        cursor: pointer;
+      }
     }
   }
 }

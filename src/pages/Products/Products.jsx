@@ -57,7 +57,7 @@ const Products = () => {
             <Card
               title="6 Macaroons"
               src="./images/macarons.webp"
-              text="Enjoy our delectable macaroons, crafted with shredded coconut and a touch of vanilla for a light, chewy texture."
+              text="Enjoy our delectable macaroons, crafted with shredded coconut and a touch of vanilla."
               tag="best price"
               price="8"
             />

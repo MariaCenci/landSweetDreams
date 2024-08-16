@@ -19,6 +19,16 @@
     right: 0;
     margin: 10px 10px 0 0;
     background-color: map-get($colors, bg-tag);
-    //transform: translate(12%, -2%);
+  }
+}
+
+@media (min-width: 2560px) {
+  .tag-container {
+    span {
+      min-width: 5rem;
+      max-width: 12rem;
+      padding: 16px;
+      font-size: map-get($font-size, md);
+    }
   }
 }

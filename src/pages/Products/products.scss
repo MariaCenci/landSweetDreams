@@ -76,3 +76,23 @@
     }
   }
 }
+
+
+@media (min-width: 2560px) {
+  #products {
+    .bakery-item-section {
+      .title-section{
+        text-align: center;
+        font-size: map-get($font-size, hero);
+      }
+      .cards-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 180px 0;
+      }
+    }
+  }
+
+
+
+}
