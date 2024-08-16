@@ -1,15 +1,14 @@
-import React from 'react'
-import "./tag.scss"
+import React from "react";
+import "./tag.scss";
 
-const Tag = ({tag}) => {
+const Tag = ({ tag }) => {
   return (
     <>
-    <div className="tag-container">
-         <span className="tag">{tag}</span>
-    </div>
-     
+      <div className="tag-container">
+        <span className="tag">{tag}</span>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Tag
+export default Tag;

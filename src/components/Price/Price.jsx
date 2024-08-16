@@ -1,12 +1,12 @@
-import React from 'react'
-import "./price.scss"
+import React from "react";
+import "./price.scss";
 
-const Price = ({price}) => {
+const Price = ({ price }) => {
   return (
     <>
-     <span className='price-card'>${price}.00</span> 
+      <span className="price-card">${price}.00</span>
     </>
-  )
-}
+  );
+};
 
-export default Price
+export default Price;

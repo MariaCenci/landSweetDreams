@@ -9,7 +9,6 @@ const NavBar = () => {
     setClickMobileMenu(!clickMobileMenu);
   };
 
-
   const closeMobileMenu = () => {
     setClickMobileMenu(false);
   };
@@ -65,7 +64,7 @@ const NavBar = () => {
                 Products
               </Link>
             </li>
-           
+
             <li className="nav-item">
               <Link
                 to="contact"

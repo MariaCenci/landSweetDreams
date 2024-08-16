@@ -23,16 +23,19 @@
       color: rgba(255, 255, 255, 0.931);
       font-size: map-get($font-size, hero);
       margin-bottom: 4px;
-      margin-top: -750px;
+      margin-top: -666px;
       text-align: center;
     }
 
     .container-hero-p {
       p {
         font-size: map-get($font-size, lg);
+        font-style: italic;
+        font-family: map-get($font-family, nav-links);
         color: map-get($colors, secondary);
         margin-bottom: 24px;
         text-align: center;
+        font-weight: 500;
       }
     }
 
@@ -42,7 +45,6 @@
       border-radius: 10px;
       transition: transform 0.5s ease-in-out;
       background-color: map-get($colors, btn);
-     
 
       &:hover {
         transform: scale(1.1);
@@ -50,7 +52,7 @@
         background-color: map-get($colors, btn1-hover);
         animation-play-state: paused;
       }
-      
+
       &:before {
         content: "";
         position: absolute;
@@ -64,20 +66,17 @@
         animation: pulse 3.5s infinite;
       }
     }
-      
+
     @keyframes pulse {
       0% {
-       
         background-color: map-get($colors, btn);
       }
       50% {
         background-color: map-get($colors, btn1-hover);
       }
       100% {
-        
         background-color: map-get($colors, btn);
       }
-    
     }
   }
 }

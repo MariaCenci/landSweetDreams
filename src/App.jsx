@@ -1,10 +1,6 @@
 import { Element } from "react-scroll";
 import React, { Suspense } from "react";
 import "./App.scss";
-//import Products from "./pages/Products/Products";
-//import Home from "./pages/Home/Home";
-//import About from "./pages/About/About";
-//import Contact from "./pages/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/Carousel/Carousel";

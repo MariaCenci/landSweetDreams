@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className="container-hero-main">
           <h1>Welcome to Sweet Dreams</h1>
           <div className="container-hero-p">
-            <p>Delicious cakes, cookies, and pastries, baked just for you.</p>
+            <p>Transforming fresh ingredients into sweet moments</p>
           </div>
           <Button
             label="CHECK OUR MENU"

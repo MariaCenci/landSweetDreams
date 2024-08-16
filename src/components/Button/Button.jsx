@@ -9,7 +9,7 @@ const Button = ({
   icon,
   iconName,
   link,
-  linkProps
+  linkProps,
 }) => {
   const renderButton = (
     <button className={`btn-${className}`} onClick={onclick}>

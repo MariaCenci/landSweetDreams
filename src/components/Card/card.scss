@@ -1,19 +1,20 @@
 @import "../../sass/variables.scss";
 
 .card-item {
-  min-width: 250px;
-  max-width: 342px;
-  min-height: 472px;
-  max-height: 500px;
+  min-width: 252px;
+  max-width: 308px;
+  min-height: 432px;
+  max-height: 488px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.337);
   border-radius: 10px;
-  overflow: hidden;
   position: relative;
   background-color: map-get($colors, secondary);
+
   .card-item-img {
     width: 100%;
-    height: 230px;
+    height: 212px;
     object-fit: cover;
+    border-radius: 4px;
   }
 
   .card-info-container {
@@ -48,7 +49,7 @@
         padding: 12px;
         background-color: map-get($colors, btn2);
         transition: background-color 0.6s ease-in-out;
-        
+
         &:hover {
           background-color: map-get($colors, btn2-hover);
         }
@@ -92,20 +93,18 @@
   }
 }
 
-
 @media (min-width: 670px) and (max-width: 767px) {
   .card-item {
     min-width: 280px;
     max-width: 382px;
-    height: 520px;
 
     .card-info-container {
       h2 {
         font-size: map-get($font-size, lg);
       }
       p {
-        font-size: map-get($font-size, md);
-        height: 142px;
+        font-size: map-get($font-size, lg);
+        height: 162px;
       }
 
       .btn-container {
@@ -130,11 +129,11 @@
 
     .card-info-container {
       h2 {
-        font-size: map-get($font-size, md);
+        font-size: map-get($font-size, lg);
       }
       p {
         font-size: map-get($font-size, md);
-        height: 148px;
+        height: 158px;
       }
 
       .btn-container {
@@ -153,9 +152,8 @@
 
 @media (min-width: 481px) and (max-width: 559px) {
   .card-item {
-    min-width: 270px;
-    max-width: 360px;
     height: 500px;
+    width: 100%;
 
     .card-info-container {
       h2 {
@@ -180,9 +178,9 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .card-item {
+    width: 100%;
     height: 488px;
     .card-info-container {
       h2 {
@@ -192,17 +190,15 @@
         font-size: map-get($font-size, md);
         height: 148px;
       }
-  .btn-container {
-    .btn-card-item {
-      width: 130px;
-      font-size: map-get($font-size, sm);
+      .btn-container {
+        .btn-card-item {
+          width: 130px;
+          font-size: map-get($font-size, sm);
+        }
+        span {
+          font-size: map-get($font-size, lg);
+        }
+      }
     }
-    span {
-      font-size: map-get($font-size, lg);
-    }
-
   }
-}
-  }
-
 }

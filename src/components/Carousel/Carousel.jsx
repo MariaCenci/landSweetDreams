@@ -9,10 +9,10 @@ const Carousel = () => {
       image: "./images/p1.webp",
     },
     {
-        name: "John Doe",
-        feedback: "A fantastic experience!",
-        image: "./images/p3.webp",
-      },
+      name: "John Doe",
+      feedback: "A fantastic experience!",
+      image: "./images/p3.webp",
+    },
     {
       name: "Meredith Gray",
       feedback: "Always fresh and beautifully decorated.",
@@ -23,7 +23,7 @@ const Carousel = () => {
       feedback: "Highly recommended!",
       image: "./images/p4.webp",
     },
-    
+
     {
       name: "Tom Davis",
       feedback: "I can never stop at just one!",
@@ -62,46 +62,50 @@ const Carousel = () => {
   return (
     <>
       <section id="carousel-section">
-      <div className="title-carousel">
+        <div className="title-carousel">
           <h1 className="title-section">What our customers say</h1>
         </div>
         <div className="carousel-section-wrapper">
-        <button id="prev-btn" className="carousel-btn" onClick={prevSlide}>
-          <img src="./icons/lower.svg" alt="" />
-        </button>
-        <div className="carousel-container">
-          <div
-            className="carousel-wrapper"
-            style={{ transform: transformValue }}
-          >
-            {customers.map((customer, index) => (
-              <div
-                className={`carousel-card ${
-                  index === currentIndex ? "active" : ""
-                }`}
-                key={index}
-              >
-                <img
-                  id="customer-img"
-                  src={customer.image}
-                  alt="customer image"
-                />
-                <h3>{customer.name}</h3>
-                <p>{customer.feedback}</p>
-                <div className="star-icon-wrapper">
-                  {[...Array(5)].map((i) => (
-                    <img key={i} id="star-icon" src="./icons/iconStar.svg" alt="" />
-                  ))}
+          <button id="prev-btn" className="carousel-btn" onClick={prevSlide}>
+            <img src="./icons/lower.svg" alt="" />
+          </button>
+          <div className="carousel-container">
+            <div
+              className="carousel-wrapper"
+              style={{ transform: transformValue }}
+            >
+              {customers.map((customer, index) => (
+                <div
+                  className={`carousel-card ${
+                    index === currentIndex ? "active" : ""
+                  }`}
+                  key={index}
+                >
+                  <img
+                    id="customer-img"
+                    src={customer.image}
+                    alt="customer image"
+                  />
+                  <h3>{customer.name}</h3>
+                  <p>{customer.feedback}</p>
+                  <div className="star-icon-wrapper">
+                    {[...Array(5)].map((i) => (
+                      <img
+                        key={i}
+                        id="star-icon"
+                        src="./icons/iconStar.svg"
+                        alt=""
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+          <button id="next-btn" className="carousel-btn" onClick={nextSlide}>
+            <img src="./icons/greater.svg" alt="" />
+          </button>
         </div>
-        <button id="next-btn" className="carousel-btn" onClick={nextSlide}>
-          <img src="./icons/greater.svg" alt="" />
-        </button>
-        </div>
-       
       </section>
     </>
   );

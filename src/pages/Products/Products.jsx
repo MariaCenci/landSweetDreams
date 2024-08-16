@@ -18,7 +18,7 @@ const Products = () => {
             />
 
             <Card
-              title="Chocolate cake"
+              title="Chocolate"
               src="./images/chocolatecake.webp"
               text="Enjoy our rich Chocolate Cake, with layers of velvety ganache and a smooth frosting."
               tag="best seller"
@@ -26,7 +26,7 @@ const Products = () => {
             />
 
             <Card
-              title="Red berries cake"
+              title="Red berries"
               src="./images/redcake.webp"
               text="Sweet and tangy, our red berries cake is bursting with the flavor of fresh seasonal berries."
               tag="refreshing"
@@ -40,7 +40,7 @@ const Products = () => {
           <div className="cards-container">
             <Card
               title="3 Croissants"
-              src="./images/sortedcroissant.webp"
+              src="./images/croissants.webp"
               text="Enjoy our Croissants, perfectly flaky and buttery with layers of light, airy pastry"
               tag="best seller"
               price="10"
@@ -64,29 +64,29 @@ const Products = () => {
           </div>
         </section>
         <section className="bakery-item-section">
-          <h1 className="title-section">Cookies</h1>
+          <h1 className="title-section">Donuts</h1>
           <div className="cards-container">
             <Card
-              title="6 Classic Cookies"
-              src="./images/classiccookies.webp"
-              text="Perfect for any occasion, our Classic Cookies are crispy on the outside, soft on the inside, and full of flavor."
+              title="3 Chocolate"
+              src="./images/donutsChoc.webp"
+              text="A rich, indulgent donut topped with smooth chocolate glaze and a sprinkle of cocoa."
               tag="best seller"
-              price="16"
+              price="10"
             />
             <Card
-              title="5 Nut Cookies"
-              src="./images/cookiesnuts.webp"
-              text="Delight in the perfect balance of chewy oats and crunchy nuts. Enjoy these delicious vegan cookies. "
-              tag="vegan"
-              price="14"
+              title="3 Strawberry"
+              src="./images/donutsPink.webp"
+              text="A light and fluffy donut coated in sweet strawberry glaze, with a burst of fruity flavor."
+              tag="new"
+              price="12"
             />
 
             <Card
-              title="4 Chocolate Cookies"
-              src="./images/chocolatecookies.webp"
-              text="These cookies are a chocolate lover's dream, offering a melt-in-your-mouth experience with every bite."
-              tag="new"
-              price="12"
+              title="6 Assorted"
+              src="./images/assortedDonuts.webp"
+              text="A delightful mix of our best donuts, each with its own unique glaze and topping."
+              tag="best price"
+              price="18"
             />
           </div>
         </section>

@@ -22,7 +22,8 @@ const About = () => {
             </span>
             <span className="icon-about-title">10.000+ sells</span>
             <p className="icon-about-text">
-              Over 10,000 successful transactions, each one a testament to our excellence.
+              Over 10,000 successful transactions, each one a testament to our
+              excellence.
             </p>
           </div>
 
@@ -30,7 +31,7 @@ const About = () => {
             <span className="icon-about">
               <img src="./icons/iconQuality.svg" alt="icon quality" />
             </span>
-            <span className="icon-about-title" >100% quality</span>
+            <span className="icon-about-title">100% quality</span>
             <p className="icon-about-text">
               We guarantee 100% quality in every product, ensuring you receive
               only the best.

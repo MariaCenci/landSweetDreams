@@ -81,9 +81,9 @@ const Contact = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9054936424805!2d-79.37873182462155!3d43.650134552630334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb32476d17c3%3A0xc0286b92ad186853!2sToronto%20St%2C%20Toronto%2C%20ON%2C%20Canad%C3%A1!5e0!3m2!1sen-US!2sus!4v1723547573327!5m2!1sen-US!2sus"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer"
             ></iframe>
           </div>
         </div>
