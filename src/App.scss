@@ -18,11 +18,11 @@ ul {
 }
 
 #products,
-#about, #carousel-section, #contact{
+#about,
+#carousel-section,
+#contact {
   padding: 138px 90px 168px 90px;
 }
-
-
 
 .title-section {
   font-size: map-get($font-size, xl);
@@ -30,7 +30,6 @@ ul {
   font-family: map-get($font-family, h1);
   font-weight: 400;
   padding-bottom: 22px;
-  
 }
 
 @media screen and (max-width: 960) {
@@ -40,36 +39,28 @@ ul {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
   #products,
   #about,
-  #carousel-section, #contact{
+  #carousel-section,
+  #contact {
     padding: 138px 52px 168px 52px;
   }
-  
-
 }
 
-@media  (max-width: 767px) {
-
+@media (max-width: 767px) {
   #products,
   #about,
-  #carousel-section, #contact{
-    padding: 138px 52px 168px 52px;
+  #carousel-section,
+  #contact {
+    padding: 128px 52px 128px 52px;
   }
-  
 }
-
-
 
 @media (min-width: 2560px) {
   #products,
   #about,
-  #carousel-section, #contact{
+  #carousel-section,
+  #contact {
     padding: 288px 242px 308px 242px;
   }
-  
-
-
-
 }
