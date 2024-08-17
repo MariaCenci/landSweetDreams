@@ -38,14 +38,13 @@ const Carousel = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const cardWidth = 252; // Largura do cartão + margem (ajuste conforme necessário)
+  const cardWidth = 252;
   const visibleCards = 4;
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === customers.length - visibleCards ? 0 : prevIndex + 1
     );
-    console.log("chamou", currentIndex);
   };
 
   const prevSlide = () => {
@@ -54,7 +53,6 @@ const Carousel = () => {
         ? (prevIndex = customers.length - visibleCards)
         : prevIndex - 1
     );
-    console.log("chamou", currentIndex);
   };
 
   const transformValue = `translateX(-${currentIndex * cardWidth}px)`;
@@ -76,9 +74,7 @@ const Carousel = () => {
             >
               {customers.map((customer, index) => (
                 <div
-                  className={`carousel-card ${
-                    index === currentIndex ? "active" : ""
-                  }`}
+                  className="carousel-card"
                   key={index}
                 >
                   <img
