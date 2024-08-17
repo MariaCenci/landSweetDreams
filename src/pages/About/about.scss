@@ -40,7 +40,7 @@
     }
     .icon-about-text {
       text-align: center;
-      min-height: 190px;
+      min-height: 170px;
       max-height: 200px;
       padding: 0 32px;
       font-family: map-get($font-family, nav-links);
@@ -218,7 +218,7 @@
     .icons-about-container {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 18px;
+      gap: 10px;
 
       .icon-about-title {
         font-size: map-get($font-size, md);
@@ -226,6 +226,7 @@
       .icon-about-text {
         padding: 0 32px 0 32px;
         font-size: map-get($font-size, sm);
+      
       }
     }
   }
