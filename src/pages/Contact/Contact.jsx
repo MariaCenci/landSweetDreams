@@ -3,6 +3,21 @@ import "./contact.scss";
 import Button from "../../components/Button/Button";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <>
       <section id="contact">
@@ -43,6 +58,8 @@ const Contact = () => {
                   id="name"
                   name="name"
                   placeholder="Your name"
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -52,6 +69,8 @@ const Contact = () => {
                   id="email"
                   name="email"
                   placeholder="Email address"
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -63,6 +82,8 @@ const Contact = () => {
                     cols={50}
                     rows={10}
                     placeholder="Your message"
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
