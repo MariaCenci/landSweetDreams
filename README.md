@@ -48,4 +48,4 @@ http://localhost:5173
 
 This project is deployed on Vercel. 
 You can view the live site here: 
-https://land-sweet-dreams-r8mlums16-maria-cencis-projects.vercel.app/
+https://land-sweet-dreams-pctt70cqy-maria-cencis-projects.vercel.app/
