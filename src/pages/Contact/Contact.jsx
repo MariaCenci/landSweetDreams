@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.scss";
 import Button from "../../components/Button/Button";
 
@@ -16,6 +16,11 @@ const Contact = () => {
       ...prevData,
       [name]: value,
     }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(JSON.stringify(formData, null, 2));
   };
 
   return (
@@ -51,7 +56,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <form action="/submit-form">
+            <form onSubmit={handleSubmit}>
               <div className="field-form">
                 <input
                   type="text"
