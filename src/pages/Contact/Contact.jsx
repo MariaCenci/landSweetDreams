@@ -16,6 +16,13 @@ const Contact = () => {
     }));
   };
 
+  const handleMessageChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      message: e.target.value,
+    }));
+  };
+
   const handleEmailChange = (e) => {
     setFormData((prevData) => ({
       ...prevData,
@@ -93,7 +100,7 @@ const Contact = () => {
                     rows={10}
                     placeholder="Your message"
                     value={formData.message}
-                    onChange={handleChange}
+                    onChange={handleMessageChange}
                   />
                 </div>
               </div>
