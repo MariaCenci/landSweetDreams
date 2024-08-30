@@ -9,12 +9,17 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
+  const handleNameChange = (e) => {
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      name: e.target.value,
+    }));
+  };
+
+  const handleEmailChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      email: e.target.value,
     }));
   };
 
@@ -64,7 +69,7 @@ const Contact = () => {
                   name="name"
                   placeholder="Your name"
                   value={formData.name}
-                  onChange={handleChange}
+                  onChange={handleNameChange}
                 />
               </div>
 
@@ -75,7 +80,7 @@ const Contact = () => {
                   name="email"
                   placeholder="Email address"
                   value={formData.email}
-                  onChange={handleChange}
+                  onChange={handleEmailChange}
                 />
               </div>
 
